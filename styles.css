@@ -1,0 +1,76 @@
+body {
+  background-color: #35408e;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 50px 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.main-image {
+  width: 380px; /* Adjusted width of the main image */
+  height: 100px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Added margin for spacing */
+}
+
+.new-image {
+  width: 380px; /* Adjusted width of the new image */
+  height: 100px; /* Maintain aspect ratio */
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+
+.login-form label {
+  margin-top: 15px;
+  color: black; /* Ensure label text is black */
+}
+
+.login-form input {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login-form button {
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #35408e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: blue;
+}

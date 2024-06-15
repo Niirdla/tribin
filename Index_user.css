@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #35408e;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white; /* Adjust as needed */
+  color: black;
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width of the logo */
+  height: 70px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* Default link color */
+}
+
+.nav-links a.dashboard-link,
+.nav-links a.manage-users-link {
+  margin-left: 20px; /* Adjust the margin to create spacing between links */
+}
+
+/* New styles for Dashboard and Manage users links */
+.nav-links a.dashboard-link:hover {
+  color: blue; /* Change the color when hovering for Dashboard link */
+}
+
+.nav-links a.manage-users-link:hover {
+  color: green; /* Change the color when hovering for Manage Users link */
+}
+
+.logout a {
+  text-decoration: none;
+}
+
+/* Additional styles for hover effect */
+.nav-links a:hover {
+  color: red; /* Change the color on general hover */
+}
+.box {
+  margin: 3em auto;
+  overflow: hidden;
+  width: 1200px;
+  margin-top: 100px;}
+
+.ratio {
+  position: relative;
+}
+
+.ratio::before {
+  background: rgba(0,0,0,.5);
+  color: white;
+  display: block;
+  left: 0;
+  padding: .25em;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.ratio-1\:1 { 
+  padding-top: 70%;
+}
+
+.crop {
+  background: #35408e;
+  overflow: hidden;
+  position: relative;
+}
+
+.crop > * {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  top: 34%;
+  right: -50%;
+}
+
+.dashboard-link,
+.manage-users-link {
+  margin-left: 20px; /* Adjust the margin to create spacing between links */
+  text-decoration: none;
+  color: black; /* Adjust link color as needed */
+}
+
+ /* Apply styles for the form table */
+ .form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Apply styles for table cells (td) */
+.form-table td {
+  padding: 10px; /* Adjust the padding as needed */
+  border: 1px solid #ccc; /* Add borders for the cells */
+}
+
+/* Apply styles for labels */
+.form-table label {
+  display: block;
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+/* Apply styles for input fields and select */
+.form-table input, .form-table select {
+  width: 100%;
+  padding: 5px;
+}
